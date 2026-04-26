@@ -12,10 +12,10 @@ Central registry of all source materials for the case study, with quality tier c
 
 | Tier | Count | Description |
 |------|-------|-------------|
-| T1 — Primary | 0 | Full-text source in `sources/` folder |
+| T1 — Primary | 1 | Full-text source in `sources/` folder |
 | T2 — Partial | 0 | Partial text, search-derived, or paywalled |
 | T3 — Referenced | 0 | Cited but not in repo; unverified |
-| **Total** | **0** | |
+| **Total** | **1** | |
 
 ### Tier Definitions
 
@@ -50,6 +50,7 @@ Central registry of all source materials for the case study, with quality tier c
 
 | # | Source | Tier | Date | Publisher | Local File | Key Data |
 |---|--------|------|------|-----------|------------|----------|
+| 1 | Domain Awareness System - Wikipedia Overview | T1 | 2026-04-25 | Wikipedia | reports/wikipedia_das.md | History, capabilities, controversies |
 
 ---
 

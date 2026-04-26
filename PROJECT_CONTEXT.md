@@ -4,15 +4,15 @@ Quick reference for session continuity. Auto-maintained by skills — you do not
 
 ## Project Overview
 
-**Repository**: Agentic AI Case Study Development Starter Kit
-**Type**: GitHub template repository
+**Repository**: NYPD-DT-Project
+**Type**: Case study repository
 **Version**: 3.1.0
 **Course**: ITEC-617, American University Kogod School of Business, Spring 2026
-**Purpose**: Template for developing HBR-style MBA case studies from digital sources using AI tools
+**Purpose**: Developing HBR-style MBA case study on NYPD Domain Awareness System using AI tools
 
 ## Current Status
 
-**Phase**: Template development (this is the starter kit, not an individual case study)
+**Phase**: Case study setup - NYPD Domain Awareness System (DAS)
 
 **Agentic Tool Paths**:
 - [x] Claude Code — 16 `/slash-commands` via `.claude/skills/`
@@ -27,10 +27,10 @@ Quick reference for session continuity. Auto-maintained by skills — you do not
 
 ## Source Quality
 
-**Source Registry**: Template placeholder (not populated)
-**Tier Breakdown**: T1: 0 | T2: 0 | T3: 0
-**Last Assessment**: N/A (template repo)
-**Assessment Result**: N/A
+**Source Registry**: Populated with initial sources
+**Tier Breakdown**: T1: 1 | T2: 0 | T3: 0
+**Last Assessment**: Initial source added (2026-04-25)
+**Assessment Result**: N/A (insufficient sources for assessment)
 
 ## Verification Debt
 
@@ -44,6 +44,7 @@ See `verification-debt.yaml` for details.
 - v3.1.0: Added VS Code + GitHub Copilot as second agentic path (free via GitHub Education)
 - Copilot instructions mirror CLAUDE.md behavioral guidance with skill equivalents table
 - README Step 3 presents three options: Option A (Claude Code), Option B (VS Code + Copilot), Option C (Chat Tools)
+- Configured case study for NYPD Domain Awareness System with Raymond W. Kelly as protagonist
 
 ## Testing History
 

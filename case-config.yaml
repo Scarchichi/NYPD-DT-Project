@@ -23,33 +23,33 @@
 # -----------------------------------------------------------------------------
 case:
   # Full company name as it appears in formal documents
-  company_name: "Company Name"           # e.g., "JPMorgan Chase & Co."
+  company_name: "New York Police Department"           # e.g., "JPMorgan Chase & Co."
 
   # Short name for file naming and casual references
-  company_short: "Company"               # e.g., "JPMorgan"
+  company_short: "NYPD"               # e.g., "JPMorgan"
 
   # Brief description of the case topic
-  topic: "Topic Description"             # e.g., "Enterprise AI Transformation"
+  topic: "Domain Awareness System (DAS) - Smart Policing Platform"             # e.g., "Enterprise AI Transformation"
 
   # Primary decision-maker the case follows
-  protagonist_name: "Protagonist Name"   # e.g., "Teresa Carlson Waldron"
-  protagonist_title: "Title"             # e.g., "Chief Availability Officer"
+  protagonist_name: "Raymond W. Kelly"   # e.g., "Teresa Carlson Waldron"
+  protagonist_title: "Police Commissioner"             # e.g., "Chief Availability Officer"
 
   # Case type: "business" or "public_policy"
-  case_type: "business"                  # For public policy cases, set to "public_policy"
+  case_type: "public_policy"                  # For public policy cases, set to "public_policy"
 
 # -----------------------------------------------------------------------------
 # COURSE INFORMATION
 # -----------------------------------------------------------------------------
 course:
   # Course identifier
-  name: "Course Name"                    # e.g., "ITEC-617"
+  name: "ITEC-617"                    # e.g., "ITEC-617"
 
   # School or program name
-  institution: "Institution"             # e.g., "Kogod School of Business"
+  institution: "American University Kogod School of Business"             # e.g., "Kogod School of Business"
 
   # When the case will be taught
-  semester: "Semester Year"              # e.g., "Spring 2026"
+  semester: "Spring 2026"              # e.g., "Spring 2026"
 
 # -----------------------------------------------------------------------------
 # DOCUMENT SETTINGS
