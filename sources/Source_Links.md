@@ -72,6 +72,20 @@ Catalog of all source materials for the case study.
 
 ## Industry Reports
 
+### NYPD Domain Awareness System Technology Page
+
+- **Publisher**: New York Police Department
+- **URL**: https://www.nyc.gov/site/nypd/about/about-nypd/equipment-tech/technology.page
+- **Date**: April 25, 2026
+- **Key data points**: Mobile DAS is jointly developed with Microsoft; uses the world’s largest network of cameras, license plate readers, and radiological sensors; provides live video and sensor access to precincts.
+
+### NYPD Domain Awareness System Impact & Use Policy
+
+- **Publisher**: New York Police Department
+- **URL**: https://www.nyc.gov/assets/nypd/downloads/pdf/public_information/post-final/domain-awareness-system-das-nypd-impact-and-use-policy_4.9.21_final.pdf
+- **Date**: April 11, 2021
+- **Key data points**: Defines governance, privacy protections, data retention, access controls, and permitted use of DAS data.
+
 ### [Report Title]
 
 - **Publisher**:

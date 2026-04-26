@@ -28,8 +28,8 @@ Quick reference for session continuity. Auto-maintained by skills — you do not
 ## Source Quality
 
 **Source Registry**: Populated with initial sources
-**Tier Breakdown**: T1: 1 | T2: 0 | T3: 0
-**Last Assessment**: Initial source added (2026-04-25)
+**Tier Breakdown**: T1: 3 | T2: 0 | T3: 0
+**Last Assessment**: Initial sources added (2026-04-25)
 **Assessment Result**: N/A (insufficient sources for assessment)
 
 ## Verification Debt

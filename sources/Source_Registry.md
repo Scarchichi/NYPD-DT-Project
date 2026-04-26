@@ -12,10 +12,10 @@ Central registry of all source materials for the case study, with quality tier c
 
 | Tier | Count | Description |
 |------|-------|-------------|
-| T1 — Primary | 1 | Full-text source in `sources/` folder |
+| T1 — Primary | 3 | Full-text source in `sources/` folder |
 | T2 — Partial | 0 | Partial text, search-derived, or paywalled |
 | T3 — Referenced | 0 | Cited but not in repo; unverified |
-| **Total** | **1** | |
+| **Total** | **3** | |
 
 ### Tier Definitions
 
@@ -51,6 +51,8 @@ Central registry of all source materials for the case study, with quality tier c
 | # | Source | Tier | Date | Publisher | Local File | Key Data |
 |---|--------|------|------|-----------|------------|----------|
 | 1 | Domain Awareness System - Wikipedia Overview | T1 | 2026-04-25 | Wikipedia | reports/wikipedia_das.md | History, capabilities, controversies |
+| 2 | NYPD Technology page - Domain Awareness System | T1 | 2026-04-25 | NYPD | reports/nycgov_nypd_technology_das.md | Official description of mobile DAS, cameras, LPRs, sensors |
+| 3 | NYPD DAS Impact & Use Policy | T1 | 2026-04-25 | NYPD | reports/domain-awareness-system-das-nypd-impact-and-use-policy_4.9.21_final.pdf | Official DAS governance, privacy, use restrictions |
 
 ---
 
