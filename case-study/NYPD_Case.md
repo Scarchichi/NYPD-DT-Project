@@ -11,10 +11,19 @@ But the system also exposed a deep strategic tension: how does a democratic poli
 ## Case Setting
 In 2012, the NYPD and Microsoft announced a citywide rollout of the Domain Awareness System. The system unified a growing web of cameras, license-plate readers, and other sensors that had already been deployed across New York City. The initial pilot in Lower Manhattan demonstrated that real-time sensor fusion could accelerate investigations and improve situational awareness during major events.
 
-By 2014, the DAS ecosystem had expanded to thousands of cameras and hundreds of automated license plate readers, plus mobile access for officers via tablets and AVL-enabled vehicles. NYPD leaders argued that DAS was critical not only for counterterrorism but also for routine crime-fighting and operational efficiency.
+By 2014, the DAS ecosystem had expanded to thousands of cameras and hundreds of automated license plate readers, plus mobile access for officers via tablets and AVL-enabled vehicles. The NYPD described DAS as "one of the world's largest networks of cameras, license plate readers, and radiological sensors," designed to detect and prevent terrorist acts while also supporting criminal investigations.
+
+The platform was positioned as a dual-use tool: a counterterrorism network for major events and a daily operational resource for precincts. That duality created a central tension for city officials and civil liberties advocates.
 
 ## Protagonist
 Raymond W. Kelly, Police Commissioner, was the central decision-maker. Kelly had overseen the NYPD's technology modernization since the early 2000s and championed the deployment of DAS as the department's next step in digital transformation. He faced competing pressures from federal grant providers, NYPD executives, rank-and-file officers, and civic activists.
+
+## Stakeholders
+- **Mayor and City Hall**: Interested in public safety outcomes and the political risks of surveillance.
+- **NYPD leadership**: Seeking operational efficiency, crime-fighting tools, and federal funding.
+- **Rank-and-file officers**: Want usable technology that improves patrol effectiveness without excessive complexity.
+- **Civil liberties groups**: Worried about privacy, racial profiling, and mission creep.
+- **Community leaders**: Concerned about trust, legitimacy, and accountability in policing.
 
 ## Key Strategic Tension
 - **Effectiveness**: Can DAS meaningfully speed investigations, help identify crime patterns, and reduce response times without overwhelming officers with data?
@@ -38,13 +47,17 @@ DAS combined:
 - radiation and chemical sensors, gunshot detectors, and cell site simulators
 - Patternizr analytics to link unsolved crimes and detect patterns
 
-The system kept live camera footage and stored license plate reads for long periods, while mobile access enabled officers on the street to query data in real time.
+The system kept live camera footage and stored license plate reads for long periods. Mobile access enabled officers on the street to query data in real time, and the NYPD stated that DAS gave every precinct access to surveillance cameras that had previously been monitored only from headquarters.
+
+The platform was integrated with Automatic Vehicle Locator (AVL) systems in more than 5,000 vehicles, extending DAS reach beyond fixed infrastructure and into active patrol operations.
 
 ### 3. The civil liberties backlash
 Civil rights groups and community advocates raised alarms about surveillance creep, racial profiling, and the potential use of facial recognition. The Intercept and other outlets reported that camera search functions could be configured around race and skin tone, and the NYCLU obtained contracts showing nationwide license plate tracking vendors.
 
 ### 4. Governance under the policy
-In April 2021, the NYPD published a Domain Awareness System Impact and Use Policy. The document outlined acceptable use, access controls, and retention guidelines, yet it left many critics unconvinced that oversight was sufficient.
+In April 2021, the NYPD published a Domain Awareness System Impact and Use Policy. The document outlined acceptable use, access controls, retention guidelines, and restrictions on data sharing. It was intended to address concerns about surveillance and privacy, but critics argued that the policy did not create enough independent oversight or guarantee transparency.
+
+The policy also reflected the department's effort to justify DAS as a disciplined, governed tool rather than an open-ended surveillance apparatus. For Commissioner Kelly, this was a governance test as much as a technology deployment.
 
 ## Teaching Focus Questions
 1. What are the legitimate public safety benefits of DAS, and how should they be weighed against privacy concerns?
