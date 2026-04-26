@@ -3,8 +3,6 @@
 ## Case Title
 NYPD Domain Awareness System: Managing Smart Policing and Civil Liberties
 
-<!-- pagebreak -->
-
 ## Learning Objectives
 - Evaluate the benefits and risks of large-scale surveillance technology in public safety.
 - Analyze governance, oversight, and transparency mechanisms for police intelligence systems.
@@ -16,8 +14,6 @@ NYPD Domain Awareness System: Managing Smart Policing and Civil Liberties
 
 ## Case Synopsis
 The NYPD developed the Domain Awareness System to integrate cameras, license plate readers, sensors, and analytic tools into a single platform. Commissioner Raymond W. Kelly championed DAS as a way to improve counterterrorism readiness and empower precincts with real-time intelligence. Public debate erupted over privacy, mission creep, and accountability.
-
-<!-- pagebreak -->
 
 ## Teaching Plan
 1. **Opening discussion (15 minutes)**
@@ -36,8 +32,6 @@ The NYPD developed the Domain Awareness System to integrate cameras, license pla
    - Instructor-led summary of best practices for technology governance in public safety.
    - Highlight the role of trust, evidence, and external accountability.
 
-<!-- pagebreak -->
-
 ## Discussion Questions
 1. What should be the NYPD's primary mission for DAS: counterterrorism, crime prevention, or operational efficiency?
 2. How should access to DAS data and analytics be controlled and audited?
@@ -51,8 +45,6 @@ Ask students to prepare a short memo from Commissioner Kelly to the Mayor recomm
 - a proposed operating model
 - a governance framework for privacy and accountability
 - a communication plan for public stakeholders
-
-<!-- pagebreak -->
 
 ## Teaching Notes
 - Emphasize that the case is not only about technology but also about institutional trust and legitimacy.

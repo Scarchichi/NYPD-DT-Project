@@ -85,3 +85,12 @@ The third path was harder but potentially richer: Open DAS to genuine independen
 There was no solution that gave you everything. There was no way to have a citywide surveillance network without creating the potential for abuse. There was no way to guarantee privacy without sacrificing some operational effectiveness. The question was how to navigate the tradeoff—how to be both effective and legitimate, both safe and free.
 
 That was the challenge facing the NYPD in 2012, in 2021, and in every year after. And it remains the challenge facing every city, every department, and every democratic institution seeking to use powerful technologies in service of the public good.
+
+## Discussion Questions
+
+1. If you were Raymond W. Kelly's successor, which of the three paths should you choose: deeper operational integration, a more limited counterterrorism-only posture, or independent review with tighter safeguards? What tradeoffs between effectiveness, legitimacy, and community trust shape your decision?
+2. Is independent oversight compatible with the operational security required for a system like DAS, or does it inevitably weaken the department's ability to act quickly on sensitive intelligence? How should the NYPD reconcile those competing demands?
+3. Patternizr was trained on historical police data. What specific bias risks does that create for investigative analytics, and how should leaders balance those risks against the tool's potential to solve crimes faster?
+4. The $350 million federal DHS investment enabled DAS to scale citywide. Was that investment justified in light of the governance gaps revealed by policy debates and civil liberties scrutiny? What criteria should determine whether public funding is worth the social cost?
+5. In a democratic institution, what does a digital transformation leader owe to the communities most affected by the technology, especially those already subject to disproportionate surveillance? How should that obligation influence DAS governance and deployment?
+6. Should the NYPD treat the 2021 DAS policy as sufficient governance reform, or does the case suggest the need for deeper institutional change such as transparent audits, independent oversight, or stricter data minimization?
