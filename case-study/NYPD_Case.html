@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NYPD_Case.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> or <div class="page"></div> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="new-york-police-department-case">New York Police Department Case</h1>
+<h2 id="title">Title</h2>
+<p>NYPD Domain Awareness System: The Promise of Smart Policing and the Price of Privacy</p>
+<h2 id="executive-summary">Executive Summary</h2>
+<p>The NYPD's Domain Awareness System (DAS) is one of the world's largest real-time surveillance and analytic platforms. Built in partnership with Microsoft, DAS aggregates CCTV feeds, license-plate readers, radiation sensors, and other citywide data into a single environment that can be accessed by precincts and counterterrorism teams. The technology promised faster crime detection, better pattern matching, and a more proactive approach to public safety.</p>
+<p>But the system also exposed a deep strategic tension: how does a democratic police force deploy an enormous mass surveillance platform while preserving civil liberties and public trust? Under Police Commissioner Raymond W. Kelly, the NYPD had to answer whether the technology should be treated principally as a counterterrorism tool, an investigative aid, or a new form of everyday policing.</p>
+<h2 id="case-setting">Case Setting</h2>
+<p>In 2012, the NYPD and Microsoft announced a citywide rollout of the Domain Awareness System. The system unified a growing web of cameras, license-plate readers, and other sensors that had already been deployed across New York City. The initial pilot in Lower Manhattan demonstrated that real-time sensor fusion could accelerate investigations and improve situational awareness during major events.</p>
+<p>By 2014, the DAS ecosystem had expanded to thousands of cameras and hundreds of automated license plate readers, plus mobile access for officers via tablets and AVL-enabled vehicles. The NYPD described DAS as &quot;one of the world's largest networks of cameras, license plate readers, and radiological sensors,&quot; designed to detect and prevent terrorist acts while also supporting criminal investigations.</p>
+<p>The platform was positioned as a dual-use tool: a counterterrorism network for major events and a daily operational resource for precincts. That duality created a central tension for city officials and civil liberties advocates.</p>
+<h2 id="protagonist">Protagonist</h2>
+<p>Raymond W. Kelly, Police Commissioner, was the central decision-maker. Kelly had overseen the NYPD's technology modernization since the early 2000s and championed the deployment of DAS as the department's next step in digital transformation. He faced competing pressures from federal grant providers, NYPD executives, rank-and-file officers, and civic activists.</p>
+<h2 id="stakeholders">Stakeholders</h2>
+<ul>
+<li><strong>Mayor and City Hall</strong>: Interested in public safety outcomes and the political risks of surveillance.</li>
+<li><strong>NYPD leadership</strong>: Seeking operational efficiency, crime-fighting tools, and federal funding.</li>
+<li><strong>Rank-and-file officers</strong>: Want usable technology that improves patrol effectiveness without excessive complexity.</li>
+<li><strong>Civil liberties groups</strong>: Worried about privacy, racial profiling, and mission creep.</li>
+<li><strong>Community leaders</strong>: Concerned about trust, legitimacy, and accountability in policing.</li>
+</ul>
+<h2 id="key-strategic-tension">Key Strategic Tension</h2>
+<ul>
+<li><strong>Effectiveness</strong>: Can DAS meaningfully speed investigations, help identify crime patterns, and reduce response times without overwhelming officers with data?</li>
+<li><strong>Privacy and legitimacy</strong>: Does DAS create a surveillance state within the city, and how should the NYPD control access, retention, and use of its data?</li>
+</ul>
+<h2 id="decision-point">Decision Point</h2>
+<p>Commissioner Kelly must decide how to position DAS going forward. Should the NYPD:</p>
+<ol>
+<li>Continue broad deployment and expand operational access across local precincts, emphasizing the crime-fighting and counterterrorism benefits?</li>
+<li>Restrict DAS use to a narrow set of counterterrorism and major-crime investigations, coupled with stronger oversight?</li>
+<li>Open the system to independent review and adopt transparent privacy safeguards to restore public trust?</li>
+</ol>
+<h2 id="narrative">Narrative</h2>
+<h3 id="1-from-data-warehouse-to-citywide-platform">1. From data warehouse to citywide platform</h3>
+<p>The NYPD's technology journey began with the Real Time Crime Center in 2005 and the Lower Manhattan Security Initiative in 2008. By 2012, the agency had the infrastructure to support a citywide system. The partnership with Microsoft promised a scalable platform that could ingest video, license plate records, and sensor data.</p>
+<h3 id="2-capabilities-and-claims">2. Capabilities and claims</h3>
+<p>DAS combined:</p>
+<ul>
+<li>9,000+ CCTV cameras and private camera feeds</li>
+<li>hundreds of automated license plate readers across bridges, tunnels, and city streets</li>
+<li>radiation and chemical sensors, gunshot detectors, and cell site simulators</li>
+<li>Patternizr analytics to link unsolved crimes and detect patterns</li>
+</ul>
+<p>The system kept live camera footage and stored license plate reads for long periods. Mobile access enabled officers on the street to query data in real time, and the NYPD stated that DAS gave every precinct access to surveillance cameras that had previously been monitored only from headquarters.</p>
+<p>The platform was integrated with Automatic Vehicle Locator (AVL) systems in more than 5,000 vehicles, extending DAS reach beyond fixed infrastructure and into active patrol operations.</p>
+<h3 id="3-a-moment-in-the-field">3. A moment in the field</h3>
+<p>In one illustrative incident, detectives responded to a late-night shooting and turned to DAS for an operational lead. Analysts combined nearby camera feeds with an LPR hit to identify a suspect vehicle, then used the mobile interface to track the car’s route while patrol units moved in. Within an hour, investigators had narrowed the search to a specific block and were able to verify the vehicle’s identity.</p>
+<p>The episode underscored why senior leaders saw DAS as a force multiplier: it could transform scattered digital feeds into a coherent picture of a developing incident. It also illustrated the friction point with civil liberties advocates, who asked whether such a potent real-time search capability should be available to street-level detectives without stronger safeguards.</p>
+<h3 id="4-the-civil-liberties-backlash">4. The civil liberties backlash</h3>
+<p>Civil rights groups and community advocates raised alarms about surveillance creep, racial profiling, and the potential use of facial recognition. The Intercept and other outlets reported that camera search functions could be configured around race and skin tone, and the NYCLU obtained contracts showing nationwide license plate tracking vendors.</p>
+<h3 id="4-governance-under-the-policy">4. Governance under the policy</h3>
+<p>In April 2021, the NYPD published a Domain Awareness System Impact and Use Policy. The document outlined acceptable use, access controls, retention guidelines, and restrictions on data sharing. It was intended to address concerns about surveillance and privacy, but critics argued that the policy did not create enough independent oversight or guarantee transparency.</p>
+<p>The policy also reflected the department's effort to justify DAS as a disciplined, governed tool rather than an open-ended surveillance apparatus. For Commissioner Kelly, this was a governance test as much as a technology deployment.</p>
+<h2 id="teaching-focus-questions">Teaching Focus Questions</h2>
+<ol>
+<li>What are the legitimate public safety benefits of DAS, and how should they be weighed against privacy concerns?</li>
+<li>How can the NYPD design governance and transparency measures that preserve trust without paralyzing the system?</li>
+<li>If you were Commissioner Kelly, what decision would you make about the future deployment of DAS?</li>
+</ol>
+<h2 id="takeaway">Takeaway</h2>
+<p>The NYPD DAS case highlights the broader governance challenge of applying powerful digital surveillance tools in a democratic society. The case asks students to evaluate technology adoption through a dual lens of operational value and civic legitimacy.</p>
+
+</body>
+</html>
